@@ -10,7 +10,7 @@ const dbURI = "mongodb+srv://chikwendu:1tzchib0ss@cluster0.qcp35te.mongodb.net/t
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }) //this return promise
   .then((result) => {
-    console.log(`Database-connected, Currently connected on http://localhost:${PORT}`);
+    console.log(`Database-connected, Currently connected on http://localhost:${8080}`);
     app.listen(8080)
   })
   //after db connected than it will listen to port3000
