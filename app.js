@@ -5,6 +5,9 @@ const User = require('./models/user');
 // express app
 const app = express();
 
+// Set the strictQuery option
+mongoose.set('strictQuery', false);
+
 // connect to mongodb & listen for requests
 const dbURI = "mongodb+srv://chikwendu:1tzchib0ss@cluster0.qcp35te.mongodb.net/test";
 
